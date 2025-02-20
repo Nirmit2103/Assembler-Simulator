@@ -286,7 +286,6 @@ def calculate_offset_for_labels(commands):
             if label_name in label_positions:
                 target = label_positions[label_name]
                 instr_type = typeof(inst)
-                print(inst)
                 if instr_type in "B":
                     offset = (target - (inst_index))*4
 

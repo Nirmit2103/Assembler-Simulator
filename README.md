@@ -51,7 +51,7 @@ Helper Functions
 -	assemble(commands) → Converts assembly commands to binary.
 
 Contributions
--	Arjun & Ayush – 
+-	Arjun & Ayush – Implemented primary instruction type functions and typeof() function.
 -	Nirmit Jain – Developed input handling and binary helper functions.
 -	Abhishek Tripathi – Handled label offset calculations, assemble() function, and final compilation.
 

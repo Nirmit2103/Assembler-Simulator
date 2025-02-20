@@ -55,7 +55,7 @@ Contributions
 -	Nirmit Jain – Developed input handling and binary helper functions.
 -	Abhishek Tripathi – Handled label offset calculations, assemble() function, and final compilation.
 
-Acknowledgments
+Acknowledgments-
 
 Special thanks to all contributors for their collaborative effort in building this RISC-V assembler.
 

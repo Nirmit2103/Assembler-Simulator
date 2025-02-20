@@ -26,16 +26,15 @@ This project is a simple RISC-V assembler that converts assembly instructions in
 
 Example Input (input.txt)
 
-addi x1, x0, 5
-beq x1, x2, label
-label:
-add x3, x1, x2
+- addi x1, x0, 5
+- beq x1, x2, label
+- label: add x3, x1, x2
 
 Example Output
 
-00000000010100000000000010010011
-00000000001000001000000001100011
-00000000001000001000000110110011
+- 00000000010100000000000010010011
+- 00000000001000001000000001100011
+- 00000000001000001000000110110011
 
 Code Overview
 
@@ -44,17 +43,17 @@ Registers
 Defined in a dictionary, mapping RISC-V register names to their corresponding binary values.
 
 Helper Functions
-	•	to_binary(value, bits) → Converts an integer to binary representation with sign extension.
-	•	rbin(), ibin(), sbin(), bbin(), jbin() → Functions to encode different instruction types into binary.
-	•	take_input(filename) → Reads and processes assembly instructions from a file.
-	•	typeof(command) → Determines the instruction type.
-	•	calculate_offset_for_labels(commands) → Computes offsets for labels in branch and jump instructions.
-	•	assemble(commands) → Converts assembly commands to binary.
+-	to_binary(value, bits) → Converts an integer to binary representation with sign extension.
+-	rbin(), ibin(), sbin(), bbin(), jbin() → Functions to encode different instruction types into binary.
+-	take_input(filename) → Reads and processes assembly instructions from a file.
+-	typeof(command) → Determines the instruction type.
+-	calculate_offset_for_labels(commands) → Computes offsets for labels in branch and jump instructions.
+-	assemble(commands) → Converts assembly commands to binary.
 
 Contributions
-	•	Arjun & Ayush – Implemented primary instruction type functions and typeof() function.
-	•	Nirmit Jain – Developed input handling and binary helper functions.
-	•	Abhishek Tripathi – Handled label offset calculations, assemble() function, and final compilation.
+-	Arjun & Ayush – Implemented primary instruction type functions and typeof() function.
+-	Nirmit Jain – Developed input handling and binary helper functions.
+-	Abhishek Tripathi – Handled label offset calculations, assemble() function, and final compilation.
 
 Acknowledgments
 
